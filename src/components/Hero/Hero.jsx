@@ -19,7 +19,7 @@ export const Hero = () => {
     </MainSectionOne>
     <MainSectionTwo>
       <img
-        src="../../../src/images/lebron-main.png"
+        src="https://res.cloudinary.com/dkifusffi/image/upload/v1700232048/landing-react/j2fpuemjlfg6xav0cco5.png"
         alt="main-img"
       />
     </MainSectionTwo>
