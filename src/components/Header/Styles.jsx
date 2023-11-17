@@ -43,7 +43,7 @@ export const MenuIcon = styled.div`
     @media (min-width: 768px) {
         display: none;
     }
-    img {
+    span {
         height: 3rem;
         width: 3rem;
     }

@@ -1,6 +1,8 @@
 import { LogoImg } from "../Header/Styles";
 import { HeaderContainer } from "../Header/Styles";
 import { IconMenuAndCart } from "../Header/Styles";
+import { IoMenu } from "react-icons/io5";
+import { IoMdCart } from "react-icons/io";
 import { MenuIcon } from "../Header/Styles";
 import { CartIcon } from "../Header/Styles";
 import { LinksMenu } from "../Header/Styles";
@@ -31,12 +33,12 @@ export const Header = () => {
         <IconMenuAndCart>
         <CartIcon>
         <a href="/#">
-        <img src="https://res.cloudinary.com/dkifusffi/image/upload/v1700232046/landing-react/tump1uvnzzdrsegmv28r.png" alt="carrito"/>
+        <IoMdCart />
         </a>
         </CartIcon>
         <MenuIcon>
         <a href="/#">
-        <img src="https://res.cloudinary.com/dkifusffi/image/upload/v1700232048/landing-react/yn8wd99yceipbnyj11eg.png" alt="menu"/>
+        <IoMenu />
         </a>
       </MenuIcon>
       </IconMenuAndCart>
