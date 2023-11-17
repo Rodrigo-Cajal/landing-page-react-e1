@@ -38,16 +38,7 @@ export const IconMenuAndCart = styled.div`
 `
 
 
-export const MenuIcon = styled.div`
-    padding: 0.5rem;
-    @media (min-width: 768px) {
-        display: none;
-    }
-`
 
-export const CartIcon = styled.div`
-    padding: 0.5rem;
-`
 
 export const IoMdCart = styled.div`
     width: 3.5rem;
@@ -58,4 +49,7 @@ export const IoMdCart = styled.div`
 export const IoMenu = styled.div`
     width: 3.5rem;
     height: 3.5rem;
+    @media (min-width: 768px) {
+        display: none;
+    }
 `

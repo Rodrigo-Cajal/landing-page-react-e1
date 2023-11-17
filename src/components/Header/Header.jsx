@@ -3,8 +3,6 @@ import { HeaderContainer } from "../Header/Styles";
 import { IconMenuAndCart } from "../Header/Styles";
 import { IoMenu } from "react-icons/io5";
 import { IoMdCart } from "react-icons/io";
-import { MenuIcon } from "../Header/Styles";
-import { CartIcon } from "../Header/Styles";
 import { LinksMenu } from "../Header/Styles";
 
 export const Header = () => {
@@ -31,16 +29,12 @@ export const Header = () => {
         </nav>
         </div>
         <IconMenuAndCart>
-        <CartIcon>
         <a href="/#">
         <IoMdCart />
         </a>
-        </CartIcon>
-        <MenuIcon>
         <a href="/#">
         <IoMenu />
         </a>
-      </MenuIcon>
       </IconMenuAndCart>
     </HeaderContainer>
   );
