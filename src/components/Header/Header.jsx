@@ -33,12 +33,12 @@ export const Header = () => {
         <IconMenuAndCart>
         <CartIcon>
         <a href="/#">
-        <IoMdCart value={{ size: "2em" }} />
+        <IoMdCart.Provider value={{ size: "2em" }} />
         </a>
         </CartIcon>
         <MenuIcon>
         <a href="/#">
-        <IoMenu value={{ size: "2em" }} />
+        <IoMenu.Provider value={{ size: "2em" }} />
         </a>
       </MenuIcon>
       </IconMenuAndCart>
