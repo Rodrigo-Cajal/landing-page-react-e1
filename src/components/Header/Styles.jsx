@@ -43,18 +43,19 @@ export const MenuIcon = styled.div`
     @media (min-width: 768px) {
         display: none;
     }
-    span {
-        height: 3rem;
-        width: 3rem;
-    }
 `
 
 export const CartIcon = styled.div`
     padding: 0.5rem;
-    img{
-        @media (max-width: 768px) {
-        height: 3rem;
-        width: 3rem;
-    }
-    }
+`
+
+export const IoMdCart = styled.div`
+    width: 3.5rem;
+    height: 3.5rem;
+`
+
+
+export const IoMenu = styled.div`
+    width: 3.5rem;
+    height: 3.5rem;
 `
