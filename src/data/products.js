@@ -59,7 +59,14 @@ export const products = [
       id: 9,
       name: "Tatum 1 'Denim'",
       price: 120,
-      image: "https://res.cloudinary.com/dkifusffi/image/upload/v1700232049/landing-react/adgowivjqvm8secuojxy.webp",
+      image: "https://res.cloudinary.com/dkifusffi/image/upload/v1700232049/landing-react/jerjjpavgnpazq1mgihq.webp",
       category: "Jordan",
     },
+    {
+      id: 10,
+      name: "LeBron NXXT Gen",
+      price: 160,
+      image: "https://res.cloudinary.com/dkifusffi/image/upload/v1700232048/landing-react/oqb6lcn7jmmoovynn4x4.jpg",
+      category: "Nike",
+    }
   ];

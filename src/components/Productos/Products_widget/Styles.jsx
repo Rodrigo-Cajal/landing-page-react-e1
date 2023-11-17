@@ -21,12 +21,12 @@ export const ProductsWidgetContainer = styled.div`
 
 export const ProductsWidgets = styled.div`
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: repeat(3, 1fr);
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(2, 1fr);
     justify-content: center;
     align-items: center;
     @media (max-width: 768px) {
         grid-template-columns: 1fr;
-        grid-template-rows: repeat(9, 1fr);
+        grid-template-rows: repeat(10, 1fr);
     }
 `

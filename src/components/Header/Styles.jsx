@@ -40,6 +40,8 @@ export const IconMenuAndCart = styled.div`
 
 export const MenuIcon = styled.div`
     padding: 0.5rem;
+    height: 3rem;
+    width: 3rem;
     @media (min-width: 768px) {
         display: none;
     }
@@ -47,4 +49,8 @@ export const MenuIcon = styled.div`
 
 export const CartIcon = styled.div`
     padding: 0.5rem;
+    @media (max-width: 768px) {
+        height: 3rem;
+        width: 3rem;
+    }
 `
