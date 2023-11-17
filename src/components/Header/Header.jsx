@@ -10,7 +10,7 @@ export const Header = () => {
     <HeaderContainer>
       <div>
         <a href="/#">
-          <LogoImg src="src/images/logo-atlas.svg" alt="Logo Atlas" />
+          <LogoImg src="https://res.cloudinary.com/dkifusffi/image/upload/v1700232046/landing-react/rllakaj3koc6tolblmne.svg" alt="Logo Atlas" />
         </a>
       </div>
       <div>
@@ -31,12 +31,12 @@ export const Header = () => {
         <IconMenuAndCart>
         <CartIcon>
         <a href="/#">
-        <img src="../../../src/images/cart.png" alt="carrito"/>
+        <img src="https://res.cloudinary.com/dkifusffi/image/upload/v1700232046/landing-react/tump1uvnzzdrsegmv28r.png" alt="carrito"/>
         </a>
         </CartIcon>
         <MenuIcon>
         <a href="/#">
-        <img src="../../../src/images/menu.png" alt="menu"/>
+        <img src="https://res.cloudinary.com/dkifusffi/image/upload/v1700232048/landing-react/yn8wd99yceipbnyj11eg.png" alt="menu"/>
         </a>
       </MenuIcon>
       </IconMenuAndCart>

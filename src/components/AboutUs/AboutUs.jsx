@@ -7,7 +7,7 @@ export const AboutUs = () => {
       <AboutUsWidget>
         <AboutUsCards>
           <img
-            src="../../../src/images/luka-uno.PNG"
+            src="https://res.cloudinary.com/dkifusffi/image/upload/v1700232049/landing-react/zfkfi6bmpcsob0wsp6vq.png"
             alt="Selección Curada de Alta Calidad"
           />
           <AboutUsSubtitle>Selección de Alta Calidad</AboutUsSubtitle>
@@ -19,7 +19,7 @@ export const AboutUs = () => {
         </AboutUsCards>
         <AboutUsCards>
           <img
-            src="../../../src/images/pg-6-hotw.jpg"
+            src="https://res.cloudinary.com/dkifusffi/image/upload/v1700232049/landing-react/v39yuyedh16auytpvcwz.jpg"
             alt="Experiencia Especializada"
           />
           <AboutUsSubtitle>Experiencia Especializada</AboutUsSubtitle>
@@ -31,7 +31,7 @@ export const AboutUs = () => {
         </AboutUsCards>
         <AboutUsCards>
           <img
-            src="../../../src/images/tatum-denim.jpeg"
+            src="https://res.cloudinary.com/dkifusffi/image/upload/v1700232049/landing-react/q2f960shs7xpbkfpwqao.jpg"
             alt="Compromiso con la Excelencia del Cliente"
           />
           <AboutUsSubtitle>Compromiso con el Cliente</AboutUsSubtitle>

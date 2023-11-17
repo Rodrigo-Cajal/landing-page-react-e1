@@ -5,7 +5,7 @@ export const MainContainer = styled.div`
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-image: url('../../../src/images/nba.jpg');
+    background-image: url('https://res.cloudinary.com/dkifusffi/image/upload/v1700232048/landing-react/cakd5gebkwdqbc1dx9rm.jpg');
     @media (max-width: 768px) {
         justify-content: center;
         flex-direction: column;
