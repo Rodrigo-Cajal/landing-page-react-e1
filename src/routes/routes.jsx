@@ -1,6 +1,7 @@
 import React from 'react';
 import {
   BrowserRouter,
+  Navigate,
   Routes,
   Route
 } from 'react-router-dom';
@@ -17,6 +18,7 @@ export const ContainerRoutes = () => {
         <Route path="nostros" element={<Nosotros />} />
         <Route path="contacto" element={<Contacto />} />
         <Route path="productos" element={<Productos />} />
+        <Route path='*' element={<Navigate to='/'/>} />
       </Routes>
     </BrowserRouter>
   );
