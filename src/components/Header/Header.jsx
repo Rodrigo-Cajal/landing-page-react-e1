@@ -7,10 +7,9 @@ import { IoMdCart } from "react-icons/io";
 import { MenuIcon } from "../Header/Styles";
 import { CartIcon } from "../Header/Styles";
 import { LinksMenu } from "../Header/Styles";
+import { Links } from "../Header/Styles";
 import { MenuHambContext } from "../../context/menuHamb";
 import { Nav } from "../Header/Styles";
-import { Links } from "react-router-dom";
-
 
 export const Header = () => {
   const menuValue= useContext(MenuHambContext)
@@ -35,13 +34,13 @@ export const Header = () => {
               <Links to="/" onClick={()=>menuValue.closeMenu()}>Inicio</Links>
             </li>
             <li>
-              <Links to="aboutus" onClick={()=>menuValue.closeMenu()}>Nosotros</Links>
+              <Links to="/aboutus" onClick={()=>menuValue.closeMenu()}>Nosotros</Links>
             </li>
             <li>
-              <Links to="products" onClick={()=>menuValue.closeMenu()}>Productos</Links>
+              <Links to="/products" onClick={()=>menuValue.closeMenu()}>Productos</Links>
             </li>
             <li>
-              <Links to="contact" onClick={()=>menuValue.closeMenu()}>Contacto</Links>
+              <Links to="/contact" onClick={()=>menuValue.closeMenu()}>Contacto</Links>
             </li>
           </LinksMenu>
         </Nav>
