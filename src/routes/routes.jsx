@@ -1,8 +1,7 @@
 import {
     BrowserRouter,
     Routes,
-    Route,
-    Navigate
+    Route
   } from 'react-router-dom';
 import { Home } from '../screens/home/home';
 import { AboutUs } from '../screens/aboutUs/aboutUs';
@@ -17,10 +16,9 @@ import { Products } from '../screens/products/products';
          <Home>
             <Routes>
               <Route path='/' element={<Home />} />  
-              <Route path='nosotros' element={<AboutUs/>} />  
-              <Route path='contacto' element={<Contact />} />  
-              <Route path='productos' element={<Products/>} />                
-              <Route path='*' element={<Navigate to='/'/>} />
+              <Route path='aboutus' element={<AboutUs/>} />  
+              <Route path='contact' element={<Contact />} />  
+              <Route path='products' element={<Products/>} />  
             </Routes>
           </Home>       
       </BrowserRouter>
