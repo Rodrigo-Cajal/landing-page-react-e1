@@ -7,6 +7,7 @@ import { IoMdCart } from "react-icons/io";
 import { MenuIcon } from "../Header/Styles";
 import { CartIcon } from "../Header/Styles";
 import { LinksMenu } from "../Header/Styles";
+import { Links } from "../Header/Styles";
 import { MenuHambContext } from "../../context/menuHamb";
 import { Nav } from "../Header/Styles";
 
@@ -30,16 +31,16 @@ export const Header = () => {
         <Nav>
           <LinksMenu className={`${menuValue.menu ? "activo": ""}`}>
             <li>
-              <a to="/" onClick={()=>menuValue.closeMenu()}>Inicio</a>
+              <Links to="/" onClick={()=>menuValue.closeMenu()}>Inicio</Links>
             </li>
             <li>
-              <a to="nosotros" onClick={()=>menuValue.closeMenu()}>Nosotros</a>
+              <Links to="nosotros" onClick={()=>menuValue.closeMenu()}>Nosotros</Links>
             </li>
             <li>
-              <a to="productos" onClick={()=>menuValue.closeMenu()}>Productos</a>
+              <Links to="productos" onClick={()=>menuValue.closeMenu()}>Productos</Links>
             </li>
             <li>
-              <a to="contacto" onClick={()=>menuValue.closeMenu()}>Contacto</a>
+              <Links to="contacto" onClick={()=>menuValue.closeMenu()}>Contacto</Links>
             </li>
           </LinksMenu>
         </Nav>

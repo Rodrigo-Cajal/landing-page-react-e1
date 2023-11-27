@@ -48,19 +48,7 @@ export const CartIcon = styled.div`
   padding: 0.5rem;
 `;
 
-export const MobileMenu = styled.div`
-  display: none;
-  @media (max-width: 768px) {
-    display: block;
-    position: absolute;
-    top: 60px;
-    left: 0;
-    width: 100%;
-    background-color: var(--primary);
-    padding: 1rem;
-    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
-
-    a {
+export const Links = styled.a`
       display: block;
       margin-bottom: 0.5rem;
       color: white;
@@ -68,9 +56,7 @@ export const MobileMenu = styled.div`
       a:hover {
         cursor: pointer;
       }
-    }
-  }
-`;
+`
 
 export const Nav = styled.div`
   .activo {
@@ -84,10 +70,6 @@ export const Nav = styled.div`
       background-color: #000;
       padding: 10px;
       border-top: solid 1px #dbdfea3b;
-
-      a:hover {
-        cursor: pointer;
-      }
     }
   }
 `;
