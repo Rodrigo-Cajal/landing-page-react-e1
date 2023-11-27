@@ -5,18 +5,18 @@ import {
   Route
 } from 'react-router-dom';
 import { Home } from '../screens/home/home';
-import { AboutUs } from '../screens/aboutUs/aboutUs';
-import { Contact } from '../screens/contact/contact';
-import { Products } from '../screens/products/products';
+import { Nosotros } from '../screens/nosotros/nosotros';
+import { Contacto } from '../screens/contacto/contacto';
+import { Productos } from '../screens/productos/productos';
 
 export const ContainerRoutes = () => {
   return (
     <BrowserRouter>
       <Routes>
         <Route path="/" element={<Home />} />
-        <Route path="aboutus" element={<AboutUs />} />
-        <Route path="contact" element={<Contact />} />
-        <Route path="products" element={<Products />} />
+        <Route path="noostros" element={<Nosotros />} />
+        <Route path="contacto" element={<Contacto />} />
+        <Route path="productos" element={<Productos />} />
       </Routes>
     </BrowserRouter>
   );

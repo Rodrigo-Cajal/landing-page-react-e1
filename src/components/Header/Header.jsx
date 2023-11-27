@@ -34,13 +34,13 @@ export const Header = () => {
               <Links to="/" onClick={()=>menuValue.closeMenu()}>Inicio</Links>
             </li>
             <li>
-              <Links to="/aboutus" onClick={()=>menuValue.closeMenu()}>Nosotros</Links>
+              <Links to="/nosotros" onClick={()=>menuValue.closeMenu()}>Nosotros</Links>
             </li>
             <li>
-              <Links to="/products" onClick={()=>menuValue.closeMenu()}>Productos</Links>
+              <Links to="/productos" onClick={()=>menuValue.closeMenu()}>Productos</Links>
             </li>
             <li>
-              <Links to="/contact" onClick={()=>menuValue.closeMenu()}>Contacto</Links>
+              <Links to="/contacto" onClick={()=>menuValue.closeMenu()}>Contacto</Links>
             </li>
           </LinksMenu>
         </Nav>
