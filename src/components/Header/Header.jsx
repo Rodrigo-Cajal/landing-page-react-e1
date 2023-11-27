@@ -1,11 +1,11 @@
 // Header.jsx
-import React from 'react';
+import React, {useContext} from 'react';
 import { LogoImg, HeaderContainer, LinksMenu, IconMenuAndCart, MenuIcon, CartIcon } from "./Styles";
 import { IoMenu, IoMdCart } from "react-icons/io5";
-import { useMenu } from './MenuContext';
+import { MenuProvider } from '../../context/menuHamb';
 
 const Header = () => {
-  const { isMenuOpen, toggleMenu } = useMenu();
+  const { isMenuOpen, toggleMenu } = useContext(MenuProvider);
 
   return (
     <HeaderContainer>

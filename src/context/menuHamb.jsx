@@ -1,11 +1,9 @@
 // MenuContext.jsx
-import { createContext, useContext, useState } from 'react';
+import { createContext, useState } from 'react';
 
 const MenuContext = createContext();
 
-export const useMenu = () => {
-  return useContext(MenuContext);
-};
+
 
 export const MenuProvider = ({ children }) => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
