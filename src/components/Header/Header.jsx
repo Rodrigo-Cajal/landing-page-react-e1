@@ -1,12 +1,24 @@
-import React from 'react';
-import { LogoImg, HeaderContainer, IconMenuAndCart, MenuIcon, CartIcon, LinksMenu } from './HeaderStyles';
-import { IoMenu, IoMdCart } from 'react-icons/io5';
-import { useMenuHamb } from '../context/MenuHambContext';
+import React, {useContext} from "react";
+import { LogoImg } from "../Header/Styles";
+import { HeaderContainer } from "../Header/Styles";
+import { IconMenuAndCart } from "../Header/Styles";
+import { IoMenu } from "react-icons/io5";
+import { IoMdCart } from "react-icons/io";
+import { MenuIcon } from "../Header/Styles";
+import { CartIcon } from "../Header/Styles";
+import { LinksMenu } from "../Header/Styles";
+import { MenuHambContext } from "../../context/menuHamb";
 
 export const Header = () => {
-  const { toggleMenu } = useMenuHamb();
+  const menuValue= useContext(MenuHambContext)
 
-  return (
+  if (menuValue.menu)
+  document.body.style.overflow ="hidden";
+  else
+  document.body.style.overflow ="auto";
+  
+  return(
+      
     <HeaderContainer>
       <div>
         <a href="/#">
@@ -15,33 +27,33 @@ export const Header = () => {
       </div>
       <div>
         <nav>
-          <LinksMenu>
+          <LinksMenu className={`${menuValue.menu ? "activo": ""}`}>
             <li>
-              <a href="/#">Inicio</a>
+              <a to="/" onClick={()=>menuValue.closeMenu()}>Inicio</a>
             </li>
             <li>
-              <a href="/#">Nosotros</a>
+              <a to="nosotros" onClick={()=>menuValue.closeMenu()}>Nosotros</a>
             </li>
             <li>
-              <a href="/#">Productos</a>
+              <a to="productos" onClick={()=>menuValue.closeMenu()}>Productos</a>
+            </li>
+            <li>
+              <a to="contacto" onClick={()=>menuValue.closeMenu()}>Contacto</a>
             </li>
           </LinksMenu>
         </nav>
-      </div>
-      <IconMenuAndCart>
+        </div>
+        <IconMenuAndCart>
         <CartIcon>
-          <a href="/#">
-            <IoMdCart />
-          </a>
+        <a href="/#">
+        <IoMdCart />
+        </a>
         </CartIcon>
-        <MenuIcon>
-          <a href="/#" onClick={toggleMenu}>
-            <IoMenu />
-          </a>
-        </MenuIcon>
+        <MenuIcon onClick={()=>menuValue.switchMenu()}>
+        <span className={`${menuValue.menu ? "span1": ""}`}></span><span className={`${menuValue.menu ? "span2": ""}`}></span><span className={`${menuValue.menu ? "span3": ""}`} ></span>
+        <IoMenu />
+      </MenuIcon>
       </IconMenuAndCart>
     </HeaderContainer>
   );
 };
-
-export default Header;

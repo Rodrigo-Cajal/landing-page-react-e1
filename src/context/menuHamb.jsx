@@ -1,21 +1,30 @@
-import React, { createContext, useContext, useState } from 'react';
+import React, {createContext, useState} from "react";
 
-const MenuHambContext = createContext();
+export const MenuHambContext = createContext ();
 
-export const useMenuHamb = () => {
-  return useContext(MenuHambContext);
-};
+export const ContextMenuHamb = ({children})=>{
 
-export const MenuHambProvider = ({ children }) => {
-  const [isMenuOpen, setIsMenuOpen] = useState(false);
+    const [menu, setMenu] = useState(false)
 
-  const toggleMenu = () => {
-    setIsMenuOpen(!isMenuOpen);
-  };
+    const switchMenu = ()=>{
 
-  return (
-    <MenuHambContext.Provider value={{ isMenuOpen, toggleMenu }}>
-      {children}
-    </MenuHambContext.Provider>
-  );
-};
+        if (menu === false)
+        setMenu (true)
+        if (menu === true)
+        setMenu (false)
+    }
+
+    const closeMenu = ()=>{
+
+        if (menu === true)
+        setMenu (false)
+    }
+
+    return(
+
+        <MenuHambContext.Provider value={{menu, switchMenu, closeMenu}}>
+            {children}
+        </MenuHambContext.Provider>
+    )
+
+}

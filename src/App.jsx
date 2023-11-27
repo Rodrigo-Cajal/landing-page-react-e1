@@ -1,16 +1,14 @@
 import './App.css'
 import { Home } from './screens/home/home'
-import { MenuHambProvider } from './context/MenuHambContext';
+import { ContextMenuHamb } from './context/menuHamb';
 
 
 function App() {
 
   return(
- <MenuHambProvider>
- <div>
+ <ContextMenuHamb>
   <Home/>
-  </div>
- </MenuHambProvider>
+ </ContextMenuHamb>
   );
 
 }
