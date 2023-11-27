@@ -28,6 +28,15 @@ export const LinksMenu = styled.ul`
   @media (max-width: 768px) {
     display: none;
   }
+  a {
+    display: block;
+      margin-bottom: 0.5rem;
+      color: white;
+      text-decoration: none;
+      &:hover {
+        cursor: pointer;
+      }
+  }
 `;
 
 export const IconMenuAndCart = styled.div`
@@ -48,15 +57,6 @@ export const CartIcon = styled.div`
   padding: 0.5rem;
 `;
 
-export const Links = styled.a`
-      display: block;
-      margin-bottom: 0.5rem;
-      color: white;
-      text-decoration: none;
-      &:hover {
-        cursor: pointer;
-      }
-`
 
 export const Nav = styled.div`
   .activo {
