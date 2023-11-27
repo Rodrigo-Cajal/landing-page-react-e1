@@ -65,6 +65,9 @@ export const MobileMenu = styled.div`
       margin-bottom: 0.5rem;
       color: white;
       text-decoration: none;
+      a:hover {
+        cursor: pointer;
+      }
     }
   }
 `;
