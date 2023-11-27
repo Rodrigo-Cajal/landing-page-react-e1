@@ -1,16 +1,16 @@
 import './App.css'
 import { Home } from './screens/home/home'
-import { MenuProvider } from './context/menuHamb';
+import { MenuHambProvider } from './context/MenuHambContext';
 
 
 function App() {
 
   return(
- <MenuProvider>
+ <MenuHambProvider>
  <div>
   <Home/>
   </div>
- </MenuProvider>
+ </MenuHambProvider>
   );
 
 }

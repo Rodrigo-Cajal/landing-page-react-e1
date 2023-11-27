@@ -1,11 +1,10 @@
-// Header.jsx
-import React, {useContext} from 'react';
-import { LogoImg, HeaderContainer, LinksMenu, IconMenuAndCart, MenuIcon, CartIcon } from "./Styles";
-import { IoMenu, IoMdCart } from "react-icons/io5";
-import { MenuProvider } from '../../context/menuHamb';
+import React from 'react';
+import { LogoImg, HeaderContainer, IconMenuAndCart, MenuIcon, CartIcon, LinksMenu } from './HeaderStyles';
+import { IoMenu, IoMdCart } from 'react-icons/io5';
+import { useMenuHamb } from '../context/MenuHambContext';
 
-const Header = () => {
-  const { isMenuOpen, toggleMenu } = useContext(MenuProvider);
+export const Header = () => {
+  const { toggleMenu } = useMenuHamb();
 
   return (
     <HeaderContainer>
@@ -41,14 +40,6 @@ const Header = () => {
           </a>
         </MenuIcon>
       </IconMenuAndCart>
-      {isMenuOpen && (
-        <div className="mobile-menu">
-          {/* Aquí puedes agregar tus elementos de menú para la versión móvil */}
-          <a href="/#">Inicio</a>
-          <a href="/#">Nosotros</a>
-          <a href="/#">Productos</a>
-        </div>
-      )}
     </HeaderContainer>
   );
 };

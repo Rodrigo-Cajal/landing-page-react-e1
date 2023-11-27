@@ -1,20 +1,21 @@
-// MenuContext.jsx
-import { createContext, useState } from 'react';
+import React, { createContext, useContext, useState } from 'react';
 
-const MenuContext = createContext();
+const MenuHambContext = createContext();
 
+export const useMenuHamb = () => {
+  return useContext(MenuHambContext);
+};
 
-
-export const MenuProvider = ({ children }) => {
+export const MenuHambProvider = ({ children }) => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   const toggleMenu = () => {
-    setIsMenuOpen((prev) => !prev);
+    setIsMenuOpen(!isMenuOpen);
   };
 
   return (
-    <MenuContext.Provider value={{ isMenuOpen, toggleMenu }}>
+    <MenuHambContext.Provider value={{ isMenuOpen, toggleMenu }}>
       {children}
-    </MenuContext.Provider>
+    </MenuHambContext.Provider>
   );
 };
