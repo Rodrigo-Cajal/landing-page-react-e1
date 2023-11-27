@@ -72,19 +72,14 @@ export const MobileMenu = styled.div`
 export const Nav = styled.div`
   .activo {
     @media (max-width: 768px) {
-      display: flex;
-      position: absolute;
-      flex-direction: column;
-      justify-content: start;
-      align-items: center;
-      top: 0;
-      left: 0;
-      background-color: var(--colorverde);
-      width: 50%;
-      height: 100vh;
-      padding: 30px 0;
-      z-index: 7;
-      gap: 30px;
+        flex-direction: column;
+    position: absolute;
+    top: 63px;
+    left: 0;
+    right: 0;
+    background-color: #000;
+    padding: 10px;
+    border-top: solid 1px #dbdfea3b;
     }
   }
 `;
