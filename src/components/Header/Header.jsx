@@ -8,6 +8,7 @@ import { MenuIcon } from "../Header/Styles";
 import { CartIcon } from "../Header/Styles";
 import { LinksMenu } from "../Header/Styles";
 import { MenuHambContext } from "../../context/menuHamb";
+import { Nav } from "../Header/Styles";
 
 export const Header = () => {
   const menuValue= useContext(MenuHambContext)
@@ -26,7 +27,7 @@ export const Header = () => {
         </a>
       </div>
       <div>
-        <nav>
+        <Nav>
           <LinksMenu className={`${menuValue.menu ? "activo": ""}`}>
             <li>
               <a to="/" onClick={()=>menuValue.closeMenu()}>Inicio</a>
@@ -41,7 +42,7 @@ export const Header = () => {
               <a to="contacto" onClick={()=>menuValue.closeMenu()}>Contacto</a>
             </li>
           </LinksMenu>
-        </nav>
+        </Nav>
         </div>
         <IconMenuAndCart>
         <CartIcon>
