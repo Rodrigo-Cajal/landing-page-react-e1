@@ -50,8 +50,9 @@ export const Header = () => {
         </a>
         </CartIcon>
         <MenuIcon onClick={()=>menuValue.switchMenu()}>
-        <span className={`${menuValue.menu ? "span1": ""}`}></span><span className={`${menuValue.menu ? "span2": ""}`}></span><span className={`${menuValue.menu ? "span3": ""}`} ></span>
+        <a href="/#">
         <IoMenu />
+        </a>
       </MenuIcon>
       </IconMenuAndCart>
     </HeaderContainer>
