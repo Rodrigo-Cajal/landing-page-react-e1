@@ -53,7 +53,7 @@ export const Links = styled.a`
       margin-bottom: 0.5rem;
       color: white;
       text-decoration: none;
-      a:hover {
+      &:hover {
         cursor: pointer;
       }
 `
@@ -70,6 +70,7 @@ export const Nav = styled.div`
       background-color: #000;
       padding: 10px;
       border-top: solid 1px #dbdfea3b;
+      border-bottom: solid 1px #dbdfea3b;
     }
   }
 `;
