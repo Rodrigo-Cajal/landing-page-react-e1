@@ -80,7 +80,7 @@ export const Nav = styled.div`
       background-color: #000;
       padding: 10px;
       border-top: solid 1px #dbdfea3b;
-      z-index: 1;
+      z-index: 7;
     }
   }
 `;
