@@ -4,7 +4,7 @@ import { Footer } from "../../components/Footer/Footer";
 import { ContactoContainer, ContactoSection, FormButton, FormContainer, FormField, FormInput, FormTitle, SectionDos, SectionUno } from "./styles";
 
 
-export const Contact = () => {
+export const Contacto = () => {
     return (
       <>
     <Header/>

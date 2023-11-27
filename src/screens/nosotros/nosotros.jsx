@@ -4,7 +4,7 @@ import { Footer } from "../../components/Footer/Footer";
 import { AboutUs } from "../../components/AboutUs/AboutUs";
 
 
-export const Aboutus = () => {
+export const Nosotros = () => {
     return (
       <>
     <Header/>
