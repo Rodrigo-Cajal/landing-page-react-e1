@@ -1,13 +1,12 @@
-import { LogoImg } from "../Header/Styles";
-import { HeaderContainer } from "../Header/Styles";
-import { IconMenuAndCart } from "../Header/Styles";
-import { IoMenu } from "react-icons/io5";
-import { IoMdCart } from "react-icons/io";
-import { MenuIcon } from "../Header/Styles";
-import { CartIcon } from "../Header/Styles";
-import { LinksMenu } from "../Header/Styles";
+// Header.jsx
+import React from 'react';
+import { LogoImg, HeaderContainer, LinksMenu, IconMenuAndCart, MenuIcon, CartIcon } from "./Styles";
+import { IoMenu, IoMdCart } from "react-icons/io5";
+import { useMenu } from './MenuContext';
 
-export const Header = () => {
+const Header = () => {
+  const { isMenuOpen, toggleMenu } = useMenu();
+
   return (
     <HeaderContainer>
       <div>
@@ -29,19 +28,29 @@ export const Header = () => {
             </li>
           </LinksMenu>
         </nav>
-        </div>
-        <IconMenuAndCart>
+      </div>
+      <IconMenuAndCart>
         <CartIcon>
-        <a href="/#">
-        <IoMdCart />
-        </a>
+          <a href="/#">
+            <IoMdCart />
+          </a>
         </CartIcon>
         <MenuIcon>
-        <a href="/#">
-        <IoMenu />
-        </a>
-      </MenuIcon>
+          <a href="/#" onClick={toggleMenu}>
+            <IoMenu />
+          </a>
+        </MenuIcon>
       </IconMenuAndCart>
+      {isMenuOpen && (
+        <div className="mobile-menu">
+          {/* Aquí puedes agregar tus elementos de menú para la versión móvil */}
+          <a href="/#">Inicio</a>
+          <a href="/#">Nosotros</a>
+          <a href="/#">Productos</a>
+        </div>
+      )}
     </HeaderContainer>
   );
 };
+
+export default Header;

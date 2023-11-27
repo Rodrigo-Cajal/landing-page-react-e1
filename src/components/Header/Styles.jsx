@@ -49,3 +49,23 @@ export const CartIcon = styled.div`
     padding: 0.5rem;
 `
 
+export const MobileMenu = styled.div`
+  display: none;
+  @media (max-width: 768px) {
+    display: block;
+    position: absolute;
+    top: 60px;
+    left: 0;
+    width: 100%;
+    background-color: var(--primary);
+    padding: 1rem;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+
+    a {
+      display: block;
+      margin-bottom: 0.5rem;
+      color: white;
+      text-decoration: none;
+    }
+  }
+`;
