@@ -14,9 +14,9 @@ export const ContainerRoutes = () => {
     <BrowserRouter>
       <Routes>
         <Route path="/" element={<Home />} />
-        <Route path="/nostros" element={<Nosotros />} />
-        <Route path="/contacto" element={<Contacto />} />
-        <Route path="/productos" element={<Productos />} />
+        <Route path="nostros" element={<Nosotros />} />
+        <Route path="contacto" element={<Contacto />} />
+        <Route path="productos" element={<Productos />} />
       </Routes>
     </BrowserRouter>
   );
