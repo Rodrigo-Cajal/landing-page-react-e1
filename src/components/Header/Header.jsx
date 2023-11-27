@@ -10,7 +10,6 @@ import { LinksMenu } from "../Header/Styles";
 import { Links } from "../Header/Styles";
 import { MenuHambContext } from "../../context/menuHamb";
 import { Nav } from "../Header/Styles";
-import { Link } from "react-router-dom";
 
 export const Header = () => {
   const menuValue= useContext(MenuHambContext)
@@ -35,13 +34,13 @@ export const Header = () => {
               <Links to="/" onClick={()=>menuValue.closeMenu()}>Inicio</Links>
             </li>
             <li>
-             <Link to="nosotros"> <Links onClick={()=>menuValue.closeMenu()}>Nosotros</Links></Link>
+              <Links to="nosotros" onClick={()=>menuValue.closeMenu()}>Nosotros</Links>
             </li>
             <li>
-              <Link to="nosotros"><Links onClick={()=>menuValue.closeMenu()}>Productos</Links></Link>
+              <Links to="productos" onClick={()=>menuValue.closeMenu()}>Productos</Links>
             </li>
             <li>
-              <Link to="nosotros"><Links onClick={()=>menuValue.closeMenu()}>Contacto</Links></Link>
+              <Links to="contacto" onClick={()=>menuValue.closeMenu()}>Contacto</Links>
             </li>
           </LinksMenu>
         </Nav>
