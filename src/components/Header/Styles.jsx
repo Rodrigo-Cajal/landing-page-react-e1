@@ -84,6 +84,10 @@ export const Nav = styled.div`
       background-color: #000;
       padding: 10px;
       border-top: solid 1px #dbdfea3b;
+
+      a:hover {
+        cursor: pointer;
+      }
     }
   }
 `;
